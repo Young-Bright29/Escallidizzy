@@ -1,19 +1,4 @@
 
-<a href="
- target="_blank" rel="noopener noreferrer">https://www.effectivegatecpm.com/ei4xthruk?key=abeb14211380f66b6e1f886020191f24</a>
-<a href="
- target="_blank" rel="noopener noreferrer">https://www.effectivegatecpm.com/b6edigkfq?key=6407fba9e804848cd58a51f9e716c0bd</a>
-<a href="
- target="_blank" rel="noopener noreferrer">https://www.effectivegatecpm.com/ti9tamsd?key=9a62cff9319a0bde94abcc9dacc6054e</a>
-<a href="
- target="_blank" rel="noopener noreferrer">https://www.effectivegatecpm.com/cygkeeyvf?key=1f3cd6c764cd6b1f5587b5abf9ccadb3</a>
-<a href="
- target="_blank" rel="noopener noreferrer">https://www.effectivegatecpm.com/br8qc417y0?key=bcae7640302a16f4431a145a494b727a</a>
-<a href="
- target="_blank" rel="noopener noreferrer">https://www.effectivegatecpm.com/ai75xgxvi?key=540177652bb1a8b56df9789f5f4c113f</a>
-<a href="
- target="_blank" rel="noopener noreferrer">https://www.effectivegatecpm.com/wbgnzfpq2i?key=dcd3bacaec8373af537e9fa7b0e85b25</a>
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -84,54 +69,6 @@ for (let i = 0; i < 100; i++) {
 
 function shuffle(array) {
     for (let i = array.length - 1; i > 0; i--) {
-        const j = Math.floor(Math.random() * (i + 1));
-        [array[i], array[j]] = [array[j], array[i]];
-    }
-}
-
-// Shuffle links initially
-shuffle(links);
-
-let lastIframeIndex = -1;
-let linkIndex = 0;
-
-// ==============================
-// RANDOM CLICK ENGINE
-// ==============================
-
-function openRandomLink() {
-
-    // Cycle links evenly
-    if (linkIndex >= links.length) {
-        shuffle(links);
-        linkIndex = 0;
-    }
-
-    const randomLink = links[linkIndex];
-    linkIndex++;
-
-    let iframeIndex;
-    do {
-        iframeIndex = Math.floor(Math.random() * iframes.length);
-    } while (iframeIndex === lastIframeIndex);
-
-    lastIframeIndex = iframeIndex;
-
-    iframes[iframeIndex].src = randomLink;
-
-    console.log("Opened:", randomLink, "in iframe", iframeIndex);
-
-    const randomDelay = Math.floor(Math.random() * 4000) + 1000; // 1–5 seconds
-    setTimeout(openRandomLink, randomDelay);
-}
-
-// Start test
-openRandomLink();
-
-</script>
-
-</body>
-</html> = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
         [array[i], array[j]] = [array[j], array[i]];
     }
